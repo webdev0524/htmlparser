@@ -1,0 +1,9 @@
+
+
+Field a:class, b:id, c:element 
+
+CASE
+1: a
+2: b
+3: a, c
+4: b, c

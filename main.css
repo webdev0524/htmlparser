@@ -1,0 +1,23 @@
+/* put custom styles in this file */
+
+/* check to make sure css is loaded */
+body {
+  /* background-color: lightblue; */
+}
+
+.right{
+  float: right;
+}
+.btn{
+  float: right;
+  margin-left: 50px;
+  width: 100px;
+}
+
+.panel{
+  margin-top: 10px;
+}
+textarea{
+  overflow-y: scroll;
+  resize: none;
+}

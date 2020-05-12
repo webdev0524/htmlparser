@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- set viewport to device width to make site responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- bootstrap css -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- custom styles -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+
+  <title>Frontend Template</title>
+
+  <style type="text/css" media="screen">
+    /*#htmlinput { 
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }*/
+    .collapse{
+      height:200px;
+    }
+    .modal-body{
+      height: 400px;
+    }
+  </style>  
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1 class="text-center">Html Parser</h1>
+      </div>
+    </div>
+    <div class="action row">
+      <div class='input col-sm-3'>
+        <input type="text" class="form-control" id="filterInput" placeholder="Input class with '.' here">
+      </div>
+
+      <div class='buttons col-sm-6 right'>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#jsonModal">Save</button>
+        <button type="button" class="btn btn-danger" id="clear">Clear</button>
+      </div>
+
+    </div>
+
+    <div class="panel panel-success">
+      <div class="panel-heading">PASTE HTML BODY</div>
+      <div class="panel-body">
+        <textarea class="form-control" rows="15" id="htmlinput"></textarea>
+        
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion">
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="jsonModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Result as JSON</h4>
+        </div>
+        <div class="modal-body" id="modalBody">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- jquery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.11/ace.js"></script>
+  <!--<script type="text/javascript" src="js/ace.js"></script>-->
+
+  <!-- custom script -->
+  <script type="text/javascript" src="main.js"></script>
+  <script>
+
+  </script>
+</body>
+</html>
